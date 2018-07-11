@@ -4,7 +4,7 @@ namespace Dropper;
 
 use pocketmine\plugin\PluginBase;
 
-use pocketmine\scheduler\PluginTask;
+use pocketmine\scheduler\Task;
 
 use pocketmine\math\Vector3;
 
@@ -23,7 +23,7 @@ class Main extends PluginBase{
 	];
 		$cfg = new C($this->getDataFolder() . "config.yml", C::YAML, $second);
 		$cfg->save();
-		$this->getServer()->getScheduler()->scheduleRepeatingTask(new Task($this), $this->getConfig()->get("seconds")*20);
+		$this->getScheduler()->scheduleRepeatingTask(new Task($this), $this->getConfig()->get("seconds")*20);
 	}
 	
 	public function drop(){
@@ -39,7 +39,7 @@ class Main extends PluginBase{
 						$id = $text[1];
 						$count = $text[3];
 						$meta = $text[2];
-						$level->dropItem(new Vector3($t->x, $t->y + 3, $t->z), Item::get($id, $meta, $count));
+						$level->dropItem(new Vector3($t->x, $t->y + 2, $t->z), Item::get($id, $meta, $count));
 					}
 				}
 			}
@@ -47,14 +47,13 @@ class Main extends PluginBase{
 	}
 }
 
-class Task extends PluginTask{
+class dropTask extends Task{
 	
 	public function __construct(Main $plugin){
-		parent::__construct($plugin);
 		$this->plugin = $plugin;
 	}
 	
-	public function onRun($currentTick){
+	public function onRun(int $currentTick){
 		$this->plugin->drop();
 	}
 }
