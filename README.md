@@ -1,10 +1,10 @@
 # Dropper-DP
 Plugin To create Items Generator
 
-<h1>Installtion</h1> <br>
+<h1>Installtion</h1>
 1- <a href="poggit.pmmp.io/ci/Ky75/Dropper-DP">Download</a> it in You'r Device<br>
-2- Drop it into Plugins DIR <Phar/Folder>
-3- Restart Your Server
+2- Drop it into Plugins DIR <Phar/Folder><br>
+3- Restart Your Server<br>
 <b>Note: <font color="gray">You need DevTools to run Folder Type</font></b><br>
 
 <h1>How to use Plugin</h1>
