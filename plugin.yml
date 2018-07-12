@@ -1,8 +1,0 @@
----
-name: Dropper-DP
-author: KYUMA
-main: Dropper\Main
-version: 1.0
-api: [4.0.0, 3.0.0, 2.0.0, 1.0.0]
-website: http://instagram.com/ky75
-description: for create generator sign
