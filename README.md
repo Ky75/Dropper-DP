@@ -6,7 +6,7 @@ Plugin To create Items Generator
 2- Drop it into Plugins DIR <Phar/Folder> | <b>Note: </b><font color="gray">You need DevTools to run Folder Type</font><br>
 3- Restart Your Server
 
-<h1>How to use Plugin</h1
+<h1>How to use Plugin</h1>
 1- You need to Place sign
 2- write in Line 1: Dropper
 3- write in Line 2: Item I
