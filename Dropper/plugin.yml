@@ -1,0 +1,6 @@
+---
+name: Dropper-DP
+main: KYUMA\Loader
+author: Ky75
+version: 2.0
+api: [3.0.0, 4.0.0]
